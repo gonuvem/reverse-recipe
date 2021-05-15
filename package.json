@@ -4,9 +4,11 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "fmt": "dprint fmt"
   },
   "dependencies": {
+    "dprint": "git://github.com/jeovazero/binwrap-dprint.git#9e2fd706ceb40bdcfdaf2d60250af60ddfa60b9b",
     "react": "17.0.0",
     "react-dom": "17.0.0"
   },
