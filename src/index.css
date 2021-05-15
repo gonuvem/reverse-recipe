@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Rancho&display=swap');
+
+:root {
+    --typeface-primary: 'Rancho', cursive;
+    --typeface-secondary: 'Fira Code', monospace;
+    --color-primary: #FFCA62;
+    --color-primary-darken: #E59F16;
+    --color-primary-lighten: #FFEBB1;
+    --bg-pattern: url('@assets/lunch-pattern.jpg');
+}
+
+body {
+  margin: 0;
+  font-family: var(--typeface-secondary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
