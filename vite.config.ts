@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [reactRefresh()],
   resolve: {
     alias: {
-      '@assets': path.resolve(__dirname, '/assets'),
+      '~assets': path.resolve(__dirname, '/assets'),
     },
   },
 })
