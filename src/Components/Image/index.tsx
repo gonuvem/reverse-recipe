@@ -4,8 +4,8 @@ import React, { useCallback, useState } from 'react'
 
 type ImageProps = ImgHTMLAttributes<HTMLImageElement>
 
-const Image = ({ ...rest }: ImageProps) => {
-  const [sourceImage, setSourceImage] = useState(rest.src ?? placeholderImage)
+const Image = ({ ...props }: ImageProps) => {
+  const [sourceImage, setSourceImage] = useState(props.src ?? placeholderImage)
 
   const handleLoadError = useCallback(
     () => {
@@ -15,7 +15,7 @@ const Image = ({ ...rest }: ImageProps) => {
   )
 
   return (
-    <img {...rest} src={sourceImage} onError={handleLoadError} />
+    <img {...props} src={sourceImage} onError={handleLoadError} />
   )
 }
 

@@ -57,7 +57,7 @@
 }
 
 .contentInfo > h2, span {
-  font-family: 'Rancho';
+  font-family: var(--typeface-primary);
 }
 
 .contentInfo > h2 {

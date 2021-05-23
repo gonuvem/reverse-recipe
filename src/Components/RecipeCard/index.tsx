@@ -11,7 +11,7 @@ type Recipe = {
   cover?: string
   steps: string[]
   totalIngredients: number
-  matchedIgredients: number
+  matchedIngredients: number
 }
 
 export type RecipeCardProps = {
@@ -31,7 +31,7 @@ const RecipeCard = ({ isSelected, recipe }: RecipeCardProps) => {
           <span>Ingredientes</span>
           <span />
           <span>
-            {recipe.matchedIgredients}/{recipe.totalIngredients} ingredientes
+            {recipe.matchedIngredients}/{recipe.totalIngredients} ingredientes
           </span>
         </div>
         <ul>
