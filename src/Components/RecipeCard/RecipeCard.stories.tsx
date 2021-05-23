@@ -15,7 +15,7 @@ const defaultRecipe = {
     'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
   title: 'Receita A',
   totalIngredients: 10,
-  matchedIgredients: 5,
+  matchedIngredients: 5,
   steps: [
     'Step 01',
     'Step 02',
