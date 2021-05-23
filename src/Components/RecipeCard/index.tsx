@@ -1,25 +1,25 @@
-import React from 'react';
+import React from 'react'
 
-import Image from '../Image';
+import Image from '../Image'
 
-import Arrow from 'assets/Arrow.png';
-import Close from 'assets/Close.png';
-import styles from './styles.module.css';
+import Arrow from 'assets/Arrow.png'
+import Close from 'assets/Close.png'
+import styles from './styles.module.css'
 
-interface Recipe {
-  title: string;
-  cover?: string;
-  steps: string[];
-  totalIngredients: number;
-  matchedIgredients: number;
+type Recipe = {
+  title: string
+  cover?: string
+  steps: string[]
+  totalIngredients: number
+  matchedIgredients: number
 }
 
-export interface RecipeCardProps {
-  isSelected?: boolean;
-  recipe: Recipe;
+export type RecipeCardProps = {
+  isSelected?: boolean
+  recipe: Recipe
 }
 
-const RecipeCard = ({ isSelected, recipe } : RecipeCardProps) => {
+const RecipeCard = ({ isSelected, recipe }: RecipeCardProps) => {
   return (
     <div className={isSelected ? styles.selected : styles.container}>
       <div>
@@ -30,7 +30,9 @@ const RecipeCard = ({ isSelected, recipe } : RecipeCardProps) => {
         <div>
           <span>Ingredientes</span>
           <span />
-          <span>{recipe.matchedIgredients}/{recipe.totalIngredients} ingredientes</span>
+          <span>
+            {recipe.matchedIgredients}/{recipe.totalIngredients} ingredientes
+          </span>
         </div>
         <ul>
           {recipe.steps.slice(0, 3).map(step => (
@@ -38,9 +40,11 @@ const RecipeCard = ({ isSelected, recipe } : RecipeCardProps) => {
           ))}
         </ul>
       </div>
-      {isSelected ? <Image src={Close} alt="close" /> : <Image src={Arrow} alt="arrow" />}
+      {isSelected
+        ? <Image src={Close} alt='close' />
+        : <Image src={Arrow} alt='arrow' />}
     </div>
   )
-};
+}
 
-export default RecipeCard;
+export default RecipeCard
