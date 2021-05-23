@@ -1,4 +1,4 @@
-import logo from '@assets/reverse-recipe-logo.svg'
+import logo from '~assets/reverse-recipe-logo.svg'
 import React from 'react'
 import './App.css'
 

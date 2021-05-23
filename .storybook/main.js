@@ -15,7 +15,6 @@ module.exports = {
   "webpackFinal": async (config) => {
     config.resolve.alias["assets"] = path.resolve(__dirname, '../assets');
     config.resolve.extensions = [...config.resolve.extensions, '.css'];
-    console.log('Config: ', config);
     return config;
   }
 }

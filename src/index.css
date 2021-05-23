@@ -6,7 +6,8 @@
     --color-primary: #FFCA62;
     --color-primary-darken: #E59F16;
     --color-primary-lighten: #FFEBB1;
-    --bg-pattern: url('@assets/lunch-pattern.jpg');
+    --color-secondary: #42EA85;
+    --bg-pattern: url('~assets/lunch-pattern.jpg');
 }
 
 body {
@@ -14,4 +15,13 @@ body {
   font-family: var(--typeface-secondary);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
 }
